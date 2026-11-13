@@ -5,9 +5,9 @@ from playwright.sync_api import Page, expect
 def test_registration_form(page: Page):
     page.goto("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/registration")
 
-    email_input = page.get_by_test_id("registration-form-email-input").locator("input")
-    username_input = page.get_by_test_id("registration-form-username-input").locator("input")
-    password_input = page.get_by_test_id("registration-form-password-input").locator("input")
+    email_input = page.get_by_test_id("registration-form-email-input")
+    username_input = page.get_by_test_id("registration-form-username-input")
+    password_input = page.get_by_test_id("registration-form-password-input")
     reg_button = page.get_by_test_id("registration-page-registration-button")
     dashboard_title = page.get_by_test_id("dashboard-page-title")
 
